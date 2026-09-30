@@ -12,8 +12,8 @@ const isEn = currentLocale === "en";
 
 const config: Config = {
   title: isEn
-    ? "AI Learning Station"
-    : "AI 自學補給站 - AI 自學社群平台",
+    ? "AI Learning Station | Use AI Well, No Coding Background Needed"
+    : "AI 自學補給站｜不用程式背景，也能把 AI 用得很好",
   tagline: isEn
     ? "You don't need to code to get really good at AI. A learning roadmap of AI tools, prompts and workflows, starting from zero."
     : "你不用會寫程式，也能把 AI 用得很好。從零開始的 AI 工具、提示詞、Vibe Coding 與工作流學習地圖和學習資源整理。",
