@@ -164,11 +164,6 @@ const config: Config = {
         },
         { to: "/blog", label: "最新文章", position: "left" },
         { to: "/about", label: "關於本站", position: "left" },
-        {
-          href: "https://www.happyprompt.net",
-          label: "HappyPrompt",
-          position: "right",
-        },
       ],
     },
     footer: {
@@ -199,6 +194,7 @@ const config: Config = {
             { label: "隱私權政策", to: "/privacy" },
             { label: "Contact Us", to: "mailto:kdchang.ai@gmail.com" },
             { label: "KD LABs", href: "https://labs.kdchang.com" },
+            { label: "HappyPrompt", href: "https://www.happyprompt.net" },
           ],
         },
       ],

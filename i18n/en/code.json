@@ -17,6 +17,9 @@
   "home.hero.cta.secondary": {
     "message": "See the roadmap"
   },
+  "home.hero.extension": {
+    "message": "Install the HappyPrompt prompt manager extension"
+  },
   "home.cta.badge": {
     "message": "Next step"
   },

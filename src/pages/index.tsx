@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Translate from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import Icon from "@site/src/components/Icon";
@@ -11,7 +12,12 @@ import HomepageLatestPosts from "@site/src/components/HomepageLatestPosts";
 
 import styles from "./index.module.css";
 
+const HAPPYPROMPT_EXTENSION_URL =
+  "https://chromewebstore.google.com/detail/happyprompt-prompt-%E6%8F%90%E7%A4%BA%E8%A9%9E%E7%AE%A1%E7%90%86%E5%B7%A5/egecphncaagaeolknghbdgelpjfihkdj";
+
 function HomepageHeader() {
+  const { i18n } = useDocusaurusContext();
+  const storeLang = i18n.currentLocale === "en" ? "en-US" : "zh-TW";
   return (
     <header className={styles.heroBanner}>
       <div className={styles.heroContent}>
@@ -44,6 +50,24 @@ function HomepageHeader() {
             <Icon name="arrowRight" size={16} />
           </Link>
         </div>
+
+        <a
+          className={styles.extensionCta}
+          href={`${HAPPYPROMPT_EXTENSION_URL}?hl=${storeLang}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={useBaseUrl("/img/chrome-store.svg")}
+            alt="Chrome Web Store"
+            className={styles.extensionCtaIcon}
+          />
+          <span>
+            <Translate id="home.hero.extension">
+              安裝 HappyPrompt 提示詞管理擴充功能
+            </Translate>
+          </span>
+        </a>
       </div>
     </header>
   );
