@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Blog",
+    "message": "Latest articles",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "AI learning articles from AI Learning Station",
+    "message": "Latest articles from AI Learning Station: AI tool comparisons, prompt techniques, fact-checking AI answers and AI at work, written for people with no technical background.",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {

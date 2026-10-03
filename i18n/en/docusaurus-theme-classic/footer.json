@@ -62,5 +62,9 @@
   "link.item.label.HappyPrompt": {
     "message": "HappyPrompt",
     "description": "The label of footer link with label=HappyPrompt linking to https://www.happyprompt.net"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 AI 自學補給站 | AI Learning Station. Built with ❤️ by <a target=\"_blank\" href=\"https://www.kdchang.com\">KD Chang</a> in Taiwan.",
+    "description": "The footer copyright"
   }
 }

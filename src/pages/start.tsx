@@ -4,6 +4,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Icon from "@site/src/components/Icon";
+import JsonLd from "@site/src/components/JsonLd";
 
 import styles from "./learn.module.css";
 
@@ -317,6 +318,17 @@ export default function Start(): ReactNode {
           "完全沒有技術背景也沒關係。用 20 分鐘跑完五個步驟，今天就讓 AI 幫你完成第一件真實的工作。",
       })}
     >
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.q,
+            acceptedAnswer: { "@type": "Answer", text: faq.a },
+          })),
+        }}
+      />
       <header className={styles.pageHero}>
         <div className="container">
           <span className={styles.pageEyebrow}>

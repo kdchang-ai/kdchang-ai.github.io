@@ -1,7 +1,6 @@
 ---
 title: 關於本站
 description: 認識 AI 自學補給站 | AI Learning Station：一個為沒有技術背景的人而寫的 AI 自學平台，讓每個人都能把 AI 用得很好
-image: https://ai.kdchang.com/img/icon-512.png
 ---
 
 # 關於 AI 自學補給站 | AI Learning Station

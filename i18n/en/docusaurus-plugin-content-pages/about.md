@@ -1,7 +1,6 @@
 ---
 title: About
 description: Meet AI Learning Station — an AI self-learning platform written for people without a technical background, so anyone can get really good at using AI
-image: https://ai.kdchang.com/img/icon-512.png
 ---
 
 # About AI Learning Station

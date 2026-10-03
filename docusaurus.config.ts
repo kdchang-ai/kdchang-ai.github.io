@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import llmsTxtPlugin from "./plugins/llms-txt";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -75,6 +76,9 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: "最新文章",
+          blogDescription:
+            "AI 自學補給站的最新文章：AI 工具比較、提示詞技巧、幻覺查證與職場 AI 應用，寫給沒有技術背景的你。",
           blogSidebarCount: "ALL",
           blogSidebarTitle: "所有文章",
           postsPerPage: 12,
@@ -98,7 +102,21 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "text/plain",
+        title: "llms.txt",
+        href: isEn
+          ? "https://ai.kdchang.com/en/llms.txt"
+          : "https://ai.kdchang.com/llms.txt",
+      },
+    },
+  ],
   plugins: [
+    llmsTxtPlugin,
     [
       "@easyops-cn/docusaurus-search-local",
       {
@@ -132,9 +150,14 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Replace with your project's social card
-    image: "https://ai.kdchang.com/img/icon-512.png",
+    // Default social card; pages with a card from `npm run og` override it
+    // (see src/theme/SiteMetadata).
+    image: isEn ? "/img/og/en/home.png" : "/img/og/zh-Hant/home.png",
     metadata: [
+      {
+        property: "og:site_name",
+        content: isEn ? "AI Learning Station" : "AI 自學補給站",
+      },
       {
         name: "keywords",
         content: isEn

@@ -1,0 +1,34 @@
+ai-basics:
+  label: AI Basics
+  permalink: /ai-basics
+  description: How generative AI works and the core ideas behind it
+
+prompts:
+  label: Prompts
+  permalink: /prompts
+  description: How to write prompts, plus templates and techniques
+
+ai-tools:
+  label: AI Tools
+  permalink: /ai-tools
+  description: AI tool introductions, comparisons and advice on choosing
+
+safety:
+  label: Safety & Judgment
+  permalink: /safety
+  description: Data security, privacy protection and how to check facts
+
+workplace:
+  label: At Work
+  permalink: /workplace
+  description: Methods and examples for using AI in real work
+
+beginner:
+  label: Beginners
+  permalink: /beginner
+  description: For readers starting from zero
+
+announcement:
+  label: Announcements
+  permalink: /announcement
+  description: News and updates from AI Learning Station
